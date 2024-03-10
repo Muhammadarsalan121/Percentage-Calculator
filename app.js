@@ -1,10 +1,10 @@
-var chemMarks = document.querySelector('#chem-marks')
-var phyMarks = document.querySelector('#phy-marks')
-var mathMarks = document.querySelector('#math-marks')
-var comMarks = document.querySelector('#com-marks')
-var studentTotal = document.querySelector('#total-marks')
-var percentage = document.querySelector('#percentage')
-var grade = document.querySelector('#grade')
+let chemMarks = document.querySelector('#chem-marks')
+let phyMarks = document.querySelector('#phy-marks')
+let mathMarks = document.querySelector('#math-marks')
+let comMarks = document.querySelector('#com-marks')
+let studentTotal = document.querySelector('#total-marks')
+let percentage = document.querySelector('#percentage')
+let grade = document.querySelector('#grade')
 
 
 function calculatePercentage() {
@@ -13,12 +13,12 @@ function calculatePercentage() {
     console.log(mathMarks.value);
     console.log(comMarks.value);
 
-    var totalMarks = 400;
-    var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value + +comMarks.value;
+    let totalMarks = 400;
+    let obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value + +comMarks.value;
     console.log('obtained marks ===>', obtainedMarks);
     studentTotal.innerHTML = obtainedMarks;
 
-    var studentPercentage = obtainedMarks / totalMarks * 100;
+    let studentPercentage = obtainedMarks / totalMarks * 100;
     percentage.innerHTML = studentPercentage;
 
 
